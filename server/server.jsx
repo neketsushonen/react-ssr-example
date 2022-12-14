@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(
-  express.static(path.resolve(__dirname, ".", "dist"), { maxAge: "30d" })
+  express.static("dist", { maxAge: "30d" })
 );
 
 app.listen(PORT, () => {
